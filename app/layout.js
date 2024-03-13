@@ -1,8 +1,8 @@
 import "./globals.scss";
 
 export const metadata = {
-  title: "Bryan Haskin | Coder | Sailor | Explorer",
-  description: "Coder | Sailor | Explorer",
+  title: "Bryan Haskin | Coder | Sailor | Maker",
+  description: " I write code and solve problems, sometimes even in that order.",
 };
 
 export default function RootLayout({ children }) {

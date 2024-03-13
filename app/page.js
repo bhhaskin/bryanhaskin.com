@@ -6,7 +6,8 @@ export default function Home() {
       <div className={styles.page__content}>
         <h1 className={styles.page__heading}>Bryan Haskin</h1>
         <p>
-          <strong>Coder</strong> | <strong>Sailor</strong> | <strong>Explorer</strong>
+          <strong>Coder</strong> | <strong>Sailor</strong> | <strong>Maker</strong><br/>
+          I write code and solve problems
         </p>
       </div>
     </main>
