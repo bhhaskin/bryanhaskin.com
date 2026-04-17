@@ -16,7 +16,7 @@ export default function Home() {
         </p>
         <ul className={styles['page__icon-list']}>
           <li>
-            <a href="https://github.com/bhhaskin" aria-label="GitHub">
+            <a rel="me" href="https://github.com/bhhaskin" aria-label="GitHub">
             <GithubIcon/>
             <span>Github</span>
             </a>
@@ -28,7 +28,7 @@ export default function Home() {
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/bryan-haskin/" aria-label="LinkedIn">
+            <a rel="me" href="https://www.linkedin.com/in/bryan-haskin/" aria-label="LinkedIn">
               <LinkedIn/>
               <span>LinkedIn</span>
             </a>

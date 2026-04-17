@@ -19,6 +19,11 @@ export default function RootLayout({ children }) {
       <meta property="og:url" content="https://bryanhaskin.com" />
       <meta property="twitter:card" content="summary_large_image" />
       <link rel="canonical" href="https://bryanhaskin.com" />
+      <link rel="preload" as="image" href="/assets/images/bg-sm.webp" media="(max-width: 980px)" />
+      <link rel="preload" as="image" href="/assets/images/bg.webp" media="(min-width: 981px)" />
+      <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/mulish-v13-latin-300.woff2" crossOrigin="" />
+      <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/mulish-v13-latin-regular.woff2" crossOrigin="" />
+      <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/mulish-v13-latin-900.woff2" crossOrigin="" />
       <meta name="color-scheme" content="light dark" />
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"/>
       <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png"/>
@@ -30,6 +35,24 @@ export default function RootLayout({ children }) {
       <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml"/>
       <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"/>
       <meta name="theme-color" content="#0f1419" media="(prefers-color-scheme: dark)"/>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Bryan Haskin",
+            url: "https://bryanhaskin.com",
+            description: "I write code and solve problems, sometimes even in that order.",
+            sameAs: [
+              "https://github.com/bhhaskin",
+              "https://www.linkedin.com/in/bryan-haskin/",
+              "https://social.bitsofsimplicity.com/@bhhaskin",
+              "https://bitsofsimplicity.com/",
+            ],
+          }),
+        }}
+      />
       <body>{children}</body>
     </html>
   );
