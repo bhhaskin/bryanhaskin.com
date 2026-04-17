@@ -32,4 +32,12 @@ html {
   font-optical-sizing: auto;
   font-style: normal;
   color: #182129;
+  background-color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color: #e6e8ec;
+    background-color: #0f1419;
+  }
 }

@@ -24,6 +24,10 @@
       animation-name: fadeIn;
       animation-timing-function: ease-in-out;
       animation-duration: 2s;
+
+      @media (prefers-color-scheme: dark) {
+        filter: brightness(0.6) saturate(0.8);
+      }
     }
   }
 
@@ -96,6 +100,10 @@
         height: 30px;
         fill: #515369;
         transition: fill 200ms ease-in-out;
+
+        @media (prefers-color-scheme: dark) {
+          fill: #a8abc2;
+        }
       }
     }
     

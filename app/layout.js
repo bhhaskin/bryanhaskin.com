@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <meta property="og:url" content="https://bryanhaskin.com" />
       <meta property="twitter:card" content="summary_large_image" />
       <link rel="canonical" href="https://bryanhaskin.com" />
-      <meta name="color-scheme" content="light only" />
+      <meta name="color-scheme" content="light dark" />
       <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"/>
       <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png"/>
       <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png"/>
@@ -28,7 +28,8 @@ export default function RootLayout({ children }) {
       <link rel="shortcut icon" href="/assets/favicon/favicon.ico"/>
       <meta name="msapplication-TileColor" content="#ffffff"/>
       <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml"/>
-      <meta name="theme-color" content="#ffffff"/>
+      <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"/>
+      <meta name="theme-color" content="#0f1419" media="(prefers-color-scheme: dark)"/>
       <body>{children}</body>
     </html>
   );
